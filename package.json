@@ -4,7 +4,11 @@
   "description": "Compares two configuration files and shows a difference",
   "main": "dist/index.js",
   "scripts": {
+    "babel-node": "babel-node",    
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gendiff": "dist/bin/gendiff.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,19 @@
   "bugs": {
     "url": "https://github.com/deadmp3/gendiff/issues"
   },
-  "homepage": "https://github.com/deadmp3/gendiff#readme"
+  "homepage": "https://github.com/deadmp3/gendiff#readme",
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-plugin-babel": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*"
+  }
 }
