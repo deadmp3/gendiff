@@ -1,0 +1,24 @@
+{
+  "name": "gendiff-sergey",
+  "version": "0.0.7",
+  "description": "Compares two configuration files and shows a difference",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadmp3/gendiff.git"
+  },
+  "keywords": [
+    "compare",
+    "files",
+    "difference"
+  ],
+  "author": "Sergey Grigoryev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadmp3/gendiff/issues"
+  },
+  "homepage": "https://github.com/deadmp3/gendiff#readme"
+}
