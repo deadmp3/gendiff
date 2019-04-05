@@ -4,11 +4,15 @@
   "description": "Compares two configuration files and shows a difference",
   "main": "dist/index.js",
   "scripts": {
-    "babel-node": "babel-node",    
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node",
+    "test": "jest",
     "eslint": "eslint",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
   },
   "bin": {
     "gendiff": "dist/bin/gendiff.js"
@@ -29,17 +33,21 @@
   },
   "homepage": "https://github.com/deadmp3/gendiff#readme",
   "dependencies": {
-    "commander": "^2.19.0"
+    "commander": "^2.19.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "babel-cli": "*",
-    "babel-core": "*",
-    "babel-preset-env": "*",
-    "babel-preset-stage-0": "*",
-    "babel-eslint": "*",
-    "eslint": "*",
-    "eslint-plugin-babel": "*",
-    "eslint-config-airbnb-base": "*",
-    "eslint-plugin-import": "*"
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.3",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-jest": "22.4.3",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jest": "21.15.1",
+    "jest": "22.4.3"
   }
 }
